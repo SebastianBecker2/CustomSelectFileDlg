@@ -7,11 +7,9 @@ namespace TestApp
     using System.Diagnostics;
     using System.IO;
     using System.Linq;
-    using System.Runtime.InteropServices;
     using System.Windows.Forms;
     using CustomSelectFileDlg;
     using CustomSelectFileDlg.EventArgs;
-    using Microsoft.VisualBasic;
     using static Vanara.PInvoke.Shell32;
 
     public partial class Form1 : Form
