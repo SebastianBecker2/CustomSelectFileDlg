@@ -59,7 +59,7 @@ namespace CustomSelectFileDlg
             }
         }
         public string SelectedPath { get; set; } = string.Empty;
-        public IEnumerable<Entry>? RootFolders
+        public IEnumerable<Entry>? RootEntries
         {
             get => RtvFolderTree.RootFolders;
             set => RtvFolderTree.RootFolders = value;
@@ -164,7 +164,7 @@ namespace CustomSelectFileDlg
             DgvContent.ContextMenuStrip.Items.Add(refresh);
 
             PabCurrentPath.RootFoldersRequested += (_, args) =>
-                args.RootFolders = RootFolders?.Select(entry => entry.Name);
+                args.RootFolders = RootEntries?.Select(entry => entry.Name);
 
             PabCurrentPath.SubFoldersRequested += (_, args) =>
                 args.SubFolders =

@@ -203,7 +203,7 @@ namespace TestApp
                 EntryIconStyle = IconStyle.FallbackToSimpleIcons,
                 IsFolderSelector = true,
                 ButtonUpEnabled = ButtonUpEnabledWhen.Always,
-                RootFolders = RootEntries,
+                RootEntries = RootEntries,
             })
             {
                 dlg.ContentRequested += HandleContentRequest;
@@ -233,7 +233,7 @@ namespace TestApp
                 EntryIconStyle = IconStyle.FallbackToSimpleIcons,
                 IsFolderSelector = false,
                 ButtonUpEnabled = ButtonUpEnabledWhen.Always,
-                RootFolders = RootEntries,
+                RootEntries = RootEntries,
             })
             {
                 dlg.ContentRequested += HandleContentRequest;
@@ -267,7 +267,7 @@ namespace TestApp
                 EntryIconStyle = IconStyle.FallbackToSimpleIcons,
                 IsFolderSelector = false,
                 ButtonUpEnabled = ButtonUpEnabledWhen.Always,
-                RootFolders = RootEntries,
+                RootEntries = RootEntries,
             })
             {
                 dlg.ContentRequested += HandleContentRequest;
