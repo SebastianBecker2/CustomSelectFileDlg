@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34601.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSelectFileDlg", "CustomSelectFileDlg\CustomSelectFileDlg.csproj", "{F8CAE650-388E-4FB8-BAC1-2F221F0C48B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomSelectFileDlg", "CustomSelectFileDlg\CustomSelectFileDlg.csproj", "{F8CAE650-388E-4FB8-BAC1-2F221F0C48B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{1894A077-03A4-48AE-86EF-3C2DE6759E9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "TestApp\TestApp.csproj", "{1894A077-03A4-48AE-86EF-3C2DE6759E9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E63E7B5D-5E25-49E6-9112-37FEB672FBDE}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
