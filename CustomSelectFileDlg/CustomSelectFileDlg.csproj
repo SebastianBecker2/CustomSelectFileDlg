@@ -1,7 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -24,7 +23,6 @@ CustomSelectFileDlg tries to imitate the style and usability of the standard Win
 Additionally it supports folder selection, similar to the CommonOpenFileDialog from Microsoft.WindowsAPICodePack.Dialogs.</Description>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
   </PropertyGroup>
-
   <ItemGroup>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
@@ -35,7 +33,6 @@ Additionally it supports folder selection, similar to the CommonOpenFileDialog f
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
-
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -43,12 +40,10 @@ Additionally it supports folder selection, similar to the CommonOpenFileDialog f
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-
 </Project>
