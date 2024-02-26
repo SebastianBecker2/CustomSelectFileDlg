@@ -1,6 +1,5 @@
 namespace CustomSelectFileDlg.Exceptions
 {
-    using System.Runtime.Serialization;
     using Properties;
 
     [Serializable]
@@ -18,13 +17,6 @@ namespace CustomSelectFileDlg.Exceptions
 
         public InvalidContentRequestException(string message, Exception innerException)
             : base(message, innerException)
-        {
-        }
-
-        protected InvalidContentRequestException(
-            SerializationInfo info,
-            StreamingContext context)
-            : base(info, context)
         {
         }
     }
