@@ -179,9 +179,9 @@ namespace CustomSelectFileDlg
             var buttons = TlpArray.Controls
                 .Cast<Button>()
                 .Where(b => b != iconButton)
-                .OrderBy(b => TlpArray.GetColumn(b))
+                .OrderBy(TlpArray.GetColumn)
                 .ToList();
-            if (!buttons.Any())
+            if (buttons.Count == 0)
             {
                 return;
             }
@@ -274,7 +274,7 @@ namespace CustomSelectFileDlg
                     .Where(b => !string.IsNullOrEmpty(b.Text))
                     .ToList();
 
-                if (hiddenButtons.Any())
+                if (hiddenButtons.Count != 0)
                 {
                     allEntries.Add(hiddenButtons
                         .Select(b => new ButtonListDlg.Element(b.Text, b.Tag))

@@ -295,7 +295,7 @@ namespace CustomSelectFileDlg
                 if (string.IsNullOrEmpty(TxtSelectedFileName.Text))
                 {
                     Debug.Assert(CurrentPath is not null);
-                    SelectedPath = CurrentPath;
+                    SelectedPath = CurrentPath!;
                     return true;
                 }
 
@@ -357,7 +357,7 @@ namespace CustomSelectFileDlg
                 {
                     var entry = row.Tag as Entry;
                     Debug.Assert(entry is not null);
-                    return entry.Name == name;
+                    return entry!.Name == name;
                 });
             if (rowToSelect is not null)
             {
@@ -404,7 +404,7 @@ namespace CustomSelectFileDlg
             var selectedEntry = GetSelectedEntry();
             Debug.Assert(selectedEntry is not null);
 
-            if (selectedEntry.Type == EntryType.Folder)
+            if (selectedEntry!.Type == EntryType.Folder)
             {
                 CurrentPath =
                     Path.Combine(CurrentPath ?? "", selectedEntry.Name);
@@ -450,7 +450,7 @@ namespace CustomSelectFileDlg
             var entry2 = DgvContent.Rows[e.RowIndex2].Tag as Entry;
             Debug.Assert(entry2 is not null);
 
-            e.Handled = entry1.Type != entry2.Type;
+            e.Handled = entry1!.Type != entry2!.Type;
             e.SortResult = entry1.Type == EntryType.Folder ? -1 : 1;
         }
 

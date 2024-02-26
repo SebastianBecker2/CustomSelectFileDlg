@@ -45,9 +45,9 @@ namespace CustomSelectFileDlg
         {
             var lsb = sender as ListBox;
             Debug.Assert(lsb is not null);
-            var elementList = lsb.Tag as IList<Element>;
+            var elementList = lsb!.Tag as IList<Element>;
             Debug.Assert(elementList is not null);
-            OnElementClicked(elementList[lsb.SelectedIndex]);
+            OnElementClicked(elementList![lsb.SelectedIndex]);
 
             Hide();
         }

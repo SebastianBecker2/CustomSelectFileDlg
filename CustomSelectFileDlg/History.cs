@@ -6,8 +6,7 @@ namespace CustomSelectFileDlg
 
     internal class History
     {
-        private IList<(string path, Entry? selectedEntry)> history =
-            new List<(string path, Entry? selectedEntry)>();
+        private List<(string path, Entry? selectedEntry)> history = [];
         private int index = -1;
 
         private void PrintHistory()
