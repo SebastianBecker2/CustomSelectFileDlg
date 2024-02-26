@@ -22,6 +22,8 @@ With CustomSelectFileDlg, you can create your own filesystem or show the filesys
 CustomSelectFileDlg tries to imitate the style and usability of the standard Windows OpenFileDialog and SaveFileDialog.
 Additionally it supports folder selection, similar to the CommonOpenFileDialog from Microsoft.WindowsAPICodePack.Dialogs.</Description>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\LICENSE">
