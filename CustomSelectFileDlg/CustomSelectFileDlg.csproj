@@ -12,7 +12,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/SebastianBecker2/CustomSelectFileDlg</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>windows; winforms; control</PackageTags>
+    <PackageTags>windows; winforms; control; OpenFileDialog; SaveFileDialog</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
