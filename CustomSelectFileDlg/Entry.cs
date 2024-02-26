@@ -53,7 +53,11 @@ namespace CustomSelectFileDlg
                 }
 
                 var resourceObject = Resources.ResourceManager.GetObject(
-                    $"file_extension_{ext[1..]}",
+#if NET6_0_OR_GREATER
+                    $"file_extension_{ext[..]}",
+#else
+                    $"file_extension_{ext.Substring(1)}",
+#endif
                     Resources.Culture);
 
                 if (resourceObject is Image icon)
