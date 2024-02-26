@@ -1,6 +1,7 @@
 # CustomSelectFileDlg
 
 [![Build status](https://ci.appveyor.com/api/projects/status/u83o0hi14udcdi2y/branch/master?svg=true)](https://ci.appveyor.com/project/SebastianBecker2/customselectfiledlg/branch/master)
+[![Build Status](https://github.com/SebastianBecker2/CustomSelectFileDlg/actions/workflows/dotnet.yml/badge.svg)](https://github.com/SebastianBecker2/CustomSelectFileDlg/actions/workflows/dotnet.yml)
 
 CustomSelectFileDlg is a .Net WinForms dialog that allows you to specify the content yourself.<br>
 Regular OpenFileDialog and SaveFileDialog show files and folders from the local filesystems.<br>With CustomSelectFileDlg, you can create your own filesystem or show the filesystem of another machine or display anything that has a filesystem-like hierarchy.<br>
